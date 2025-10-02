@@ -6,9 +6,15 @@ The library is broken up into three main files:
 
 1. Go.mod – Lists the Go version and defines module path.
 2. Grade_calculator.go – This is where all the functionality is defined. The GradeCalculator struct and GradeType type are defined. Multiple functions are made according to the specification, such as calculating a new grade, adding a grade, and calculating final grade. 
+    a. NewGradeCalculator() - Constructor for grade calculation object.
+    b. AddGrade(name string, grade int, gradeType GradeType) - Add a grade to a corresponding catergory.
+    c. GetFinalGrade() - Computes final letter grade based on numeric average.
+    d. calculateNumericalGrade() - Calculates overall numerical grade 
+    e. computeAverage(grades []Grade) - Computes average grade for specific grade category.
 3. Grade_calculator_test.go – Imports the testing package to make functions that call the functions defined in grade_calculator.go and makes sure there output values are expected. 
 
 To add further test cases, follow the current instantiations and declare a function with certain added grades with an expected output.
+
 
 
 Runtime requirements:
